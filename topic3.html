@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The performance of algorithms can be modelled and evaluated</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="text-secondary " style="font-family: system-ui;">
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top ">
+	    <!-- logo -->
+	    <a class="navbar-brand" href="homepage.html">
+	      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwafasuRHotEF_co9UTh6zy5IOfJMU-L4pNOR7SUwrnowJyPsx" alt="logo" style="width:150px; margin-left: 75px;">
+	    </a>
+	    
+	    <!-- Links -->
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="homepage.html">Topics</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#" >About</a>
+	      </li>
+	    </ul>
+</nav>
+
+	<div class="container">
+		<h2 class="text-info" style="text-align: center; margin: 60px">The performance of algorithms can be modelled and evaluated</h2>
+
+		<img src="topic3.png" alt="Topic 3" style="width: 30%; float: right;">
+		<p>The main resources that an algorithm uses are time and
+		space (memory). Time is a key factor because slow programs
+		are annoying to users, and if a program is going to take
+		decades to complete a calculation, it's better to work that out
+		before you go to the trouble of implementing it! Using an
+		unnecessarily inefficient algorithm will also lead to devices
+		wasting power or needing cooling, which have an
+		environmental impact; or it could make the battery on a
+		device go flat too quickly. Some algorithms also need a lot of
+		spare memory or storage while they are running. This may
+		make the algorithm infeasible in some cases, while in other cases it might be an excellent
+		tradeoff if the algorithm is faster.</p>
+
+		<p>The time taken to solve a problem with an algorithm (and therefore programs that run the
+		algorithm) isn't necessarily proportional to the size of the input; sometimes it's better than that,
+		and sometimes it's a (lot) worse. The time taken by an algorithm is usually estimated based on
+		the size of the input (such as the number of items being searched through, the number of
+		streets in a map, or the number of pixels in an image). It's important to at least estimate the
+		speed of an algorithm before implementing it, as it might be very sensitive to the size of the
+		input; perhaps a program works satisfactorily in tests, but with a larger input it might take a ​ lot
+		longer.</p>		
+
+		<h4 style="margin-top: 40px;">Digging deeper:</h4>
+
+		<p>● There can be many different algorithms for solving the same problem, but some are
+		more efficient than others (for example, you could look for a book in a library by starting
+		at the first shelf and checking every book, but it's better to take advantage of the order
+		that the books have been shelved).</p>
+
+		<p>● The time taken by an algorithm on particular input is often measured as a function of the
+		amount of input to the algorithm. Sometimes the time taken by an algorithm is
+		proportional to the amount of data (given twice as much data, such an algorithm would
+		take roughly twice as long to process it), but very often the time taken is ​ not ​ proportional.
+		Many algorithms take more time than would be predicted from an assumption of taking
+		proportional time (for example, sorting algorithms generally take more than twice as long
+		to sort twice as much data); there are also some algorithms (such as binary search and
+		hashing) that hardly take any extra time even to process a problem that is 10 times as
+		big. Some algorithms become completely infeasible if even a little more data is added to
+		the problem because they require exponential time in the amount of data they are
+		processing; for example, there are algorithms where adding one extra item of data can
+		double the processing time. Such problems that don't have feasible algorithms are
+		referred to as "intractable" (see the next big idea).</p>
+
+		<p>● The rate of growth of the resources needed by algorithm is referred to as its ​ complexity.
+		Complexity measures are not usually made precisely, since the time taken will depend
+		on the particular computer and other details, so instead they consider the rate of growth;
+		for example, the notation O(n) is used to indicate that an algorithm solving a problem of
+		size n takes and amount of time proportional to n, whereas O(n​ 2​ ) indicates that it will
+		take time proportional to the square of the amount of input (doubling the amount of input
+		will take approximately 4 times as long to process).</p>
+
+		<p>● Choosing the wrong algorithm for a situation can lead to unnecessary computation,
+		which uses power (e.g. battery life on a portable device, or expensive energy in a large
+		data centre); this in turn can have environmental impacts.</p>
+
+		<p>● It is possible to quantify a lower bound on the amount of time that a problem may take to
+		solve even if we don't have an algorithm in mind; as a trivial example, for most problems,
+		if a program is processing ​ n ​ values, then it at least needs to take the time to read in all ​ n
+		values. An algorithm gives an upper bound for how long the problem will take to solve
+		(since it solves the problem, but we might not yet know if a faster algorithm exists). For
+		some problems we have a large gap between the known upper and lower bounds, while
+		for others we know what the best possible algorithm is.</p>
+
+		<p>● Computer science routinely deals with very large and very small quantities. Online
+		systems can deal with billions of customers or transactions, cheap cameras capture
+		millions of pixels in a fraction of a second, personal computers store billions of binary
+		digits, data usually travels at the speed of light, and a step in a computer instruction
+		happens in a billionth of a second, yet some algorithms can take billions of years to
+		complete. It is important to be able to evaluate these situations, as sometimes they work
+		in our favour (e.g. a code that takes billions of years to crack) and sometimes against us
+		(e.g. an image enhancement algorithm that takes hours to complete).</p>
+
+
+	</div>
+
+</body>
+</html>

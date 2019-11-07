@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Algorithms interact with data to solve computational problems</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="text-secondary " style="font-family: system-ui;">
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top ">
+	    <!-- logo -->
+	    <a class="navbar-brand" href="homepage.html">
+	      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwafasuRHotEF_co9UTh6zy5IOfJMU-L4pNOR7SUwrnowJyPsx" alt="logo" style="width:150px; margin-left: 75px;">
+	    </a>
+	    
+	    <!-- Links -->
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="homepage.html">Topics</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#" >About</a>
+	      </li>
+	    </ul>
+</nav>
+
+	<div class="container">
+
+		<h2 class="text-info" style="text-align: center; margin: 60px">Algorithms interact with data to solve computational problems</h2>
+
+		<img src="topic2.png" alt="Topic 2" style="width: 25%; float: right;">
+
+		<p style="margin-top: 90px;">An algorithm is a well defined process that acts on data
+		to solve some problem i.e. to achieve a result, such as
+		finding the shortest route on a map, matching two
+		strands of DNA, or changing the brightness of a photo.</p>
+
+		<p>An algorithm can only include steps that a conventional
+		computer could do; for example, you couldn't just put in
+		a step that says "find the most efficient solution".
+		Remarkably, the full power of a conventional digital
+		device can be realised by an algorithm using just three
+		structures to control program flow: sequencing (putting
+		instructions one after the other), selection (choosing
+		which part of the algorithm to execute based on some
+		values, usually using an "if" statement), and iteration (repeating part of the algorithm with a
+		loop). Apart from these three basic types of instruction, a computer is able to read in information
+		(input), give out information (output) and store data to use later on. These basic components
+		can be used to define every algorithm, as they define exactly what can (and can't) be done on
+		conventional devices.</p>
+
+		<h4 style="margin-top: 40px;">Digging deeper:</h4>
+		<p>● Algorithms can be expressed as a static (finite) representation that describes a dynamic
+		(potentially infinite) process.</p>
+
+		<p>● The "conventional" computer referred to here is the kind of processor found in typical
+		digital devices, including personal computers, smartphones, supercomputers, cloud
+		services, internet devices, and digital watches. Examples of ​ un ​ conventional computers
+		would be quantum computers and analogue computers.</p>
+		
+		<p>● The kind of algorithm that can be used in a given situation depends on the way that data
+		is stored and organised (the organisation is referred to as data structures). For example,
+		finding the smallest file in a list sorted in ascending order of size has a simple algorithm
+		(just pick the first file!), while finding the smallest file in a huge disorganised list requires
+		a different algorithm. There is a close relationship between algorithms and data;
+		designing computer systems often involves tackling the tradeoff between efficient data
+		storage and efficient algorithms to process the data, so it is therefore very important to
+		be aware of the advantages and disadvantages of different ways of storing data.</p>
+
+		<p>● The term "computational problem", "algorithmic problem", or simply "problem" in this
+		context is often used to refer to the task that needs to be computed e.g. searching for a
+		word, sorting values into order, finding the shortest route on a map, or finding a face in a
+		photo. These kinds of problems are different from, say, a maths problem, where students
+		might be expected to find a single correct solution. A computational problem can have
+		several correct solutions (algorithms), and an algorithm is a general process for solving
+		that type of problem. For example, if the problem is how to search for any given word in
+		any given document, there are several possible algorithms (e.g. a sequential search
+		comparing every word; or sorting the words into alphabetical order and then searching
+		the alphabetical list); these computational solutions contrast with a specific outcome,
+		such as "where is the word 'score' in the Gettysburg address?", which has the simple
+		answer that it is the second word.</p>
+
+		<p>● Algorithms should solve for all possible inputs that might be given in the future (such as
+		finding the high score in ​ any ​ list of scores); this contrasts with other human problem
+		solving that solves for just one instance at a time e.g. design a bridge for a particular
+		river crossing.</p>
+
+		<p>● The model for a conventional device (using sequence, selection, iteration, input, output
+		and storage) goes back to the first electronic computers, and is based on work done by
+		Alan Turing and Alonzo Church; conventional devices and programming languages that
+		meet these criteria are often (loosely) referred to as "Turing-complete". Because all
+		conventional digital devices that we work with meet these criteria, it means that
+		designing algorithms using this model has very broad applicability. ​ The concept is
+		explored further by Guzdial here
+		<a href="https://computinged.wordpress.com/2012/05/24/defining-what-does-it-mean-to-understand-computing/."> https://computinged.wordpress.com/2012/05/24/defining-what-does-it-mean-to-understa
+		nd-computing/.</a> ​ Turing's model can also be expressed using an equivalent approach
+		called recursion, which can make an algorithm easier to reason about how it works.</p>
+
+		<p>● Algorithm correctness is important - we need to be sure that it achieves exactly what we
+		expect it to achieve. This includes heuristics (near enough solutions that may not be
+		perfect, but can be computed faster than the optimal solution); heuristics can be
+		considered to be the correct solution if the desire is for a solution that is fast enough and
+		near enough to the best possible solution.</p>
+
+		<p>● The interaction of algorithms with data is crucial; we can choose between various ways
+		to arrange data in computer storage (through "data structures"), which affect how quickly
+		it can be accessed. Whenever the form of data is changed, there is typically a tradeoff
+		between time and space e.g. a search data structure such as a "hash table" is faster
+		than an unstructured list, but wastes space. Data structures can give faster access to
+		data for purposes like searching for information, finding patterns, and calculating paths
+		through maps. There are many kinds of data structures used on computers, ranging from
+		variations on lists, to trees and "graphs", which can represent general networks such as
+		road maps. The relationship between data structures and algorithms is seen, for
+		example, between searching and lists; a sorted list can be searched more efficiently than
+		an unsorted list because it makes a better algorithm possible, but it requires more
+		computation in advance to ensure the list is in sorted order.</p>
+
+		<p>● The data can also have the fundamental bit-level structure of how it is stored changed to
+		make it take less space (compression), to make it meaningless to eavesdroppers
+		(encryption) or to make it useful even if a few of the bits get messed up (error control).
+		This also presents tradeoffs; for example, a JPEG file is smaller than a raw image file,
+		but requires processing to make it smaller, and there will be a tradeoff in quality. The
+		technical word for changing the bit-level representation of data is "coding", although the
+		meaning in this context is quite different to the meaning of "coding" in the context of
+		programming. Coding changes the form of representation for encryption, compression
+		or error control to better suit how we wish to use it.
+			<p style="margin-left: 50px;">○ Encryption can allow us to transmit data while someone observes all
+			transmissions (including setting up the encryption keys), yet the eavesdropper is
+			still unable to decode anything from the data. This enables a secure connection
+			to be set up with a bank or online shop.</p>
+
+			<p style="margin-left: 50px;">○ Compression has the potential to reduce the size of files so they use less storage
+			and are transmitted faster; some methods however can expand the files rather
+			than compress them, and it is impossible to achieve infinite compression.
+			Compression is particularly important for large media files such as photos (e.g.
+			JPEG, GIF, PNG), video (e.g. MPEG) and audio (e.g. MP3).</p>
+
+			<p style="margin-left: 50px;">○ Error control enables us to detect when data has been corrupted, to any level of
+			confidence required. All data stored long-term on disks and flash memory, and all
+			data sent over wireless, wired and fibre networks has error control added to it to
+			make sure that the user doesn't accidentally end up working with incorrect data.</p>
+		</p>
+			
+		<p>● Many algorithms rely on decomposition using "divide and conquer" techniques, where
+		the problem being solved is being reduced in size until it is small enough to deal with
+		easily (e.g. sorting one item into alphabetical order is trivial!) A key idea here is recursion
+		- expressing a problem as the combination of smaller problems, which themselves can
+		be broken into smaller problems, and so on until you reach a trivial "base case". The
+		problem might have millions of items in it to process (such as searching for a word in a
+		list of a billion words), but the base case typically has only one, or even zero, items in it
+		(such as searching for a word in a list of just one word).</p>
+
+	</div>
+
+</body>
+</html>

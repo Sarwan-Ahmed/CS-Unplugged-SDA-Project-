@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time dependent operations in digital systems must be coordinated</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="text-secondary " style="font-family: system-ui;">
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top ">
+	    <!-- logo -->
+	    <a class="navbar-brand" href="homepage.html">
+	      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwafasuRHotEF_co9UTh6zy5IOfJMU-L4pNOR7SUwrnowJyPsx" alt="logo" style="width:150px; margin-left: 75px;">
+	    </a>
+	    
+	    <!-- Links -->
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="homepage.html">Topics</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#" >About</a>
+	      </li>
+	    </ul>
+</nav>
+
+	<div class="container">
+		<h2 class="text-info" style="text-align: center; margin: 60px">Time dependent operations in digital systems must be coordinated</h2>
+
+		<img src="topic9.png" alt="Topic 9" style="width: 30%; float: right;">
+		<p style="margin-top: 90px;">Digital systems have many components that
+		can run independently; these components can
+		be working in parallel, and on independent
+		schedules. Parallelism occurs at many levels in
+		digital systems, from instruction execution on a
+		CPU, to multi-core systems in a laptop, to data
+		being transmitted over a network through
+		multiple routes, to large "big data" systems that
+		process vast quantities of data in small chunks
+		and combine the results.</p>
+
+		<p>When a computational task is being spread over several independent parts of the system,
+		considerable care is needed to make the most of the ability to spread the work over multiple
+		devices. Problems need to be broken up into as many parts as possible that can be processed
+		independently and recombined, and the dependency between these operations can restrict how
+		easily a problem can be broken into parts.</p>
+		
+		<h4 style="margin-top: 40px;">Digging deeper:</h4>
+		<p>● Computing power is commonly expanded by using multi-processor systems working in
+		parallel; for example, even common desktop computers use multiple "cores" to spread
+		the processing load across several processors. High performance computers can have
+		hundreds or thousands of processors working in parallel, and "cloud" computing can
+		involve arbitrary numbers of devices being applied to a task. A computer system might
+		also involve multiple programs running independently, but communicating with each
+		other.</p>
+		
+		<p>● All of these situations require very careful coordination of the independent processes so
+		that information is collated in the correct order when each process finishes. There is also
+		the challenge of breaking a problem into many parts so that each part can be processed
+		efficiently and independently, and then combined to provide a suitable solution to the
+		problem.</p>
+
+		<p>● A key challenge is that applying twice as many processors doesn't necessarily solve a
+		problem twice as fast; often there are parts of a solution that are needed before another
+		part can be started on.</p>
+
+		<p>● Concurrent processes need to be designed carefully to avoid race conditions (where the
+		order that events happen is critical), deadlocks (where two processes are both waiting
+		for each other) and resource starvation (where some tasks prevent others from getting
+		access to resources, such as a denial-of-service attack).</p>
+
+		<p>● Time dependent operations distinguish computing from algebra; for example, the
+		sequence x=2; x=3 is meaningful in a computer program (x ends up with the value 3),
+		but a contradiction in maths (x can't be 2 and 3 at the same time); and y=x+1; x=3 has
+		an algebraic solution that is different to what would happen in a typical program because
+		it depends on the order in which the instructions are executed.</p>
+
+		<p>● A related issue is "time slicing", where multiple processes are given turns at a small
+		share of time on a machine, which makes it appear that each of them is running
+		independently. This can happen on a single-user machine (e.g. running the clock at the
+		same time as a word processor program), but also happens on computing systems that
+		deal with multiple users (e.g. a website serving information to multiple clients). Each user
+		may see the system as serving them alone, yet the server is designed to carefully switch
+		between doing tasks for each user to give this appearance.</p>
+
+	</div>
+
+</body>
+</html>

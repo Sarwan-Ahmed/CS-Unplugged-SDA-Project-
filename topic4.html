@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Some computational problems cannot be solved by algorithms</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body class="text-secondary " style="font-family: system-ui;">
+
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top ">
+	    <!-- logo -->
+	    <a class="navbar-brand" href="homepage.html">
+	      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwafasuRHotEF_co9UTh6zy5IOfJMU-L4pNOR7SUwrnowJyPsx" alt="logo" style="width:150px; margin-left: 75px;">
+	    </a>
+	    
+	    <!-- Links -->
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="homepage.html">Topics</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#" >About</a>
+	      </li>
+	    </ul>
+</nav>
+
+	<div class="container">
+
+		<h2 class="text-info" style="text-align: center; margin: 60px">Some computational problems cannot be solved by algorithms</h2>
+
+		<img src="topic4.jpeg" alt="Topic 4" style="width: 30%; float: right;">
+		<p style="margin-top: 90px;">There are some computational problems that we can
+		prove will never have programs written to solve them
+		(these problems are not computable). For example, we
+		can prove that no one will ever be able to write a general
+		app that can vet another app to tell you if it will freeze
+		your smartphone (more formally known as the halting
+		problem).</p>
+
+		<p>In addition to non-computable problems, there are many practical problems for which all known
+		algorithms to find optimal solution are “intractable”, which means that no machine exists that
+		has the resources required to execute the algorithm once the size of the input gets fairly large.
+		For these problems we need to consider heuristics (that is, find an approximate solution) rather
+		than pursue optimal solutions that could potentially take billions of years to evaluate on the
+		fastest computer. Some problems have mathematical proofs that they are intractable, but there
+		are many problems for which we haven't found an algorithm that runs in a reasonable amount of
+		time, despite decades of research; yet we also haven't proved that the algorithm can't exist.
+		Resolving this issue is widely regarded as one of the biggest questions in computer science!</p>
+
+		<h4 style="margin-top: 40px;">Digging deeper:</h4>
+		<p>● A consequence of these ideas is that the idea that "computers can calculate anything
+		given the right program" is incorrect. The limits of what can be computed may change if
+		new types of computing become common (e.g. quantum computing), but with the
+		devices that have been in use since the dawn of electronic computers, there are
+		definitely things that can't be done.</p>
+
+		<p>● Another example of a non-computable problem is the "line of code" problem. If you write
+		a large program, you might want to know for a particular line of code in the program if it
+		ever gets executed, but no-one can ever write a program that reads in another program
+		and tells you if a particular line will be executed. Of course, it can be done in some
+		special cases, but no general program can be written to achieve this. Another program
+		that can't be written is one that is given two other programs, and decides if they always
+		produce exactly the same output if they are given the same input.</p>
+
+		<p>● Problems for which we have only algorithms that take an exponential amount of time (or
+		space) as the size of the input increases are generally regarded as ​ intractable ​ as the
+		time needed can blow out to billions of years very quickly. Such algorithms amount to
+		trying out every possible answer to find the best. (Exponential time typically means that
+		to process ​ n ​ items of input, the time taken will be proportional to 2​ n​ or worse, which
+		doubles each time just one item gets added. This grows extremely large very quickly -
+		for example, adding 10 more items will multiply the time by more than 1000.) There are
+		examples where this is frustrating (e.g. finding the perfect route for a courier to drop off
+		parcels is intractable; we can find routes that are probably perfect or nearly perfect, but it
+		would take too long to be sure we have the best possible route, and therefore we may
+		be wasting fuel and time); on the other hand, this negative situation applies to
+		cryptography, where cracking the codes that are in widespread use is intractable, and
+		the lack of algorithms to do this makes secure communication and commerce possible
+		online.</p>
+		
+		<p>● For some problems we know the optimal (fastest) algorithm for solving them because we
+		can prove it can't be done in fewer steps, but for others we haven't discovered tractable
+		algorithms yet, and in some cases we don't even know whether or not tractable
+		algorithms exist. One of the biggest open questions in computer science, called the P vs.
+		NP problem, is related to intractable problems. There are two interesting variations of
+		intractable problems: design an algorithm that produces a solution to the problem, or
+		design an algorithm to check that a given solution is correct. For this huge family of
+		thousands of important problems (e.g. timetabling, route planning, vehicle loading, and
+		DNA matching), we have efficient algorithms for checking if a given solution is correct,
+		but we do not know if an efficient algorithm for finding a solution will ever be discovered.
+		As an example, consider the bin packing problem, in which objects of different sizes
+		have to be packed into a finite number of containers, each of a fixed capacity. If we are
+		given a proposed packing (which items are to be packed into each bin), checking that
+		this is a valid packing is an easy task that can be done efficiently - you just need to
+		check that no container is too full. But we do not know of any efficient algorithm that will
+		always decide if the given objects can be packed in a given number of bins. The
+		remarkable fact is that if an efficient algorithm is found for any one of these problems,
+		then all the other problems will also have an efficient algorithm, and similarly if we show
+		that no efficient algorithm exists for any one of them, than all of them are intractable.</p>
+
+		<p>● Despite not being able to find efficient algorithms to find optimal solutions, many
+		heuristics (algorithms that give near-optimal solutions) have been developed, and some
+		are known to come very close to the optimal solution, which means that in many
+		practical situations it is better to focus on improving heuristics, and not worry too much
+		that the result might be very slightly short of optimal.</p>
+
+	</div>
+
+</body>
+</html>
